@@ -1,0 +1,95 @@
+.footer-section {
+  background-color: $Dark-Blue;
+  padding: 40px 20px;
+}
+
+.footer-container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        color: white;
+        margin-bottom: 20px;
+      }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    li i {
+        color: white;
+        cursor: pointer;
+        &:hover {
+            color: $Lime-Green;
+        }
+    }
+
+
+}
+
+.social-icon-img:hover {
+    color: $Bright-Cyan;
+}
+
+.contact-container {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 0;
+    span {
+        width: 40%;
+        cursor: pointer;
+
+        &:hover {
+            color: $Lime-Green;
+        }
+    }
+}
+
+.footer-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 10px 0;
+
+    button {
+        padding: 15px 30px;
+        border-radius: 20px;
+        border: none;
+        background: $linear-background;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+    
+        &:hover {
+          opacity: 0.8;
+        }
+    }
+}
+
+@media all and (max-width: 800px) {
+   .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+   }
+
+   .contact-container {
+    flex-direction: column;
+
+    span {
+        width: 100%;
+        text-align: center;
+    }
+   }
+  }
+  

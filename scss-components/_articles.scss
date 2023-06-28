@@ -1,0 +1,54 @@
+.articles-section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  background-color: $Very-Light-Gray;
+  max-width: none;
+}
+
+.articles-section-heading {
+  padding: 20px;
+}
+
+.articles-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 10px;
+  width: 23%;
+  background-color: $White;
+  border-radius: 15px;
+  overflow: hidden;
+
+  &__author, &__article-title, &__lead {
+    padding: 5px 23px;
+  }
+
+  &__lead {
+    color: $Grayish-Blue;
+  }
+
+}
+
+@media all and (max-width: 800px) {
+    .articles-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+       
+      }
+    
+    .article-card {
+        width: 100%;
+    }
+  }
+  

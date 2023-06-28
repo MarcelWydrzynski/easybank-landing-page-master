@@ -1,0 +1,45 @@
+.about-section {
+  background-color: $Light-Grayish-Blue;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  width: 100vw;
+  max-width: none;
+
+  .about-section-lead {
+    color: $Grayish-Blue;
+  }
+}
+
+.about-sections-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 60px;
+  flex-direction: row;
+}
+
+.info-section-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  img {
+    width: 50px;
+  }
+
+  .info-section-card-description {
+    color: $Grayish-Blue;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .about-sections-cards-container {
+    flex-wrap: wrap;
+  }
+}
